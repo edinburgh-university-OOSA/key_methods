@@ -8,26 +8,29 @@ library(raster)
 
 
 # list files
-inDir="/geos/netdata/prac_geochem/week8/DTM_raw"
+dirList <- c("/Users/dill/data/teaching/key_meth/week2/ALS/DTM","/Users/dill/data/teaching/key_meth/week2/ALS/DSM")
+funs <- c("mean","max")
 
-fileList=list.files(path=inDir, pattern = "*.tif")
+i <- 0
+for(inDir in dirList){
+  fileList=list.files(path=inDir, pattern = "*.tif")
 
+  for(filename in fileList){
+    wholeName=paste(inDir,filename,sep='/')
 
-for(filename in fileList){
-  wholeName=paste(inDir,filename,sep='/')
+    # read data
+    data <- raster(wholeName)
 
-  # read data
-  data <- raster(wholeName)
+    # coarsen the resolution to get MCH
+    endRes=10  # 10 m resolutio
+    coarseFact=round(endRes/res(data)[1])
+    coarseData <- aggregate(data, fact=coarseFact,fun=funs[i])
 
-  # coarsen the resolution to get MCH
-  endRes=10  # 10 m resolutio
-  coarseFact=round(endRes/res(data)[1])
-  coarseData <- aggregate(data, fact=coarseFact)
-
-  # write to a new geotiff
-  outName=paste('Coarsen',filename,sep=".")
-  writeRaster(coarseData,outName, format="GTiff",overwrite=TRUE)
-  print(outName)
+    # write to a new geotiff
+    outName=paste('coarsen',filename,sep=".")
+    writeRaster(coarseData,outName, format="GTiff",overwrite=TRUE)
+    print(outName)
+  }
+  i <- i+1
 }
-
 
