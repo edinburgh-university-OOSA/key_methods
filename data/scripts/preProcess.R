@@ -12,7 +12,7 @@ dirList <- c("/geos/netdata/key_methods/week10/ALS/DTM","/geos/netdata/key_metho
 
 funs <- c("mean","max")
 
-i <- 0
+i <- 1
 for(inDir in dirList){
   fileList=list.files(path=inDir, pattern = "*.tif")
 
