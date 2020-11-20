@@ -18,6 +18,7 @@ for(inDir in dirList){
 
   for(filename in fileList){
     wholeName=paste(inDir,filename,sep='/')
+    print(wholeName)
 
     # read data
     data <- raster(wholeName)
