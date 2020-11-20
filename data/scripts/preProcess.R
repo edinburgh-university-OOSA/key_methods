@@ -8,7 +8,8 @@ library(raster)
 
 
 # list files
-dirList <- c("/Users/dill/data/teaching/key_meth/week2/ALS/DTM","/Users/dill/data/teaching/key_meth/week2/ALS/DSM")
+dirList <- c("/geos/netdata/key_methods/week10/ALS/DTM","/geos/netdata/key_methods/week10/ALS/DSM")
+
 funs <- c("mean","max")
 
 i <- 0
