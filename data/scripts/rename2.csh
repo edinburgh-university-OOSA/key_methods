@@ -1,6 +1,6 @@
 #!/bin/csh -f
 
-set fileList=`ls coarsen*_1M_D?M_PHASE1.tif`
+set fileList=`ls coarsen*_3M_D?M_PHASE1.tif`
 
 foreach file( $fileList )
   set newName=`echo $file|sed -e s%"_3M_"%"_10M_"%`
