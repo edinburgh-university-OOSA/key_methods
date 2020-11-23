@@ -29,7 +29,7 @@ for(inDir in dirList){
     coarseData <- aggregate(data, fact=coarseFact,fun=funs[i])
 
     # write to a new geotiff
-    outName=paste('coarsen',filename,sep=".")
+    outName=filename
     writeRaster(coarseData,outName, format="GTiff",overwrite=TRUE)
     print(outName)
   }
