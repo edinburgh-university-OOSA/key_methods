@@ -12,6 +12,10 @@ In
 
     /geos/netdata/key_methods/week10/ALS/res3m
 
+
+
+Move the DTMs and DSMs to a subdirectory with that name.
+
 Run
     Rscript /home/shancoc2/teaching/key_methods/2020-21/week10/code/data/scripts/preProcess1.R
     /home/shancoc2/teaching/key_methods/2020-21/week10/code/data/scripts/rename1.csh
