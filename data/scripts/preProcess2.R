@@ -10,7 +10,7 @@ library(raster)
 # list files
 dirList <- c("/geos/netdata/key_methods/week10/ALS/res3m/DTM","/geos/netdata/key_methods/week10/ALS/res3m/DSM")
 
-funs <- c("mean","max")
+funs <- c("mean","mean")
 
 i <- 1
 for(inDir in dirList){
