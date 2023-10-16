@@ -3,6 +3,13 @@
 Code for Key Methods course. This is currently for week 10's session using python to process lidar data to make a biomass map.
 
 
+## Convert MODIS
+
+MODIS comes in HDF-EOS format, which cannot easily be ready by QGIS. This can be converted to geotiff with:
+
+    scripts/convert_modis/convertMODIS.csh
+
+
 
 ## Pre-process data
 
