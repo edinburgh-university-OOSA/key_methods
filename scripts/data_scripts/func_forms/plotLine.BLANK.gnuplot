@@ -9,11 +9,13 @@ set term png
 #set term postscript enhanced monochrome "Times" 22
 #set size 0.75, 0.75
 #unset key
-set xlabel "Biomass (Mg/ha)"
-set ylabel "Predictor variable"
+set ylabel "Biomass (Mg/ha)"
+set xlabel "Predictor variable"
 unset key
-unset ytics
-set xrange[mIn:mAx]
+unset xtics
+#set yrange[mIn:mAx]
+set yrange[0:]
+set xrange[0:]
 
 set pointsize 2
 set output "filename.png"

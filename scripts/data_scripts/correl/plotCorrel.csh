@@ -1,9 +1,9 @@
 #!/bin/csh -f
 
-set bin="$HOME/teaching/environmental_geography/2019/pandemic_week/scripts/correl"
+set bin="$HOME/teaching/key_methods/key_src/scripts/data_scripts/correl"
 set outRoot="correlIllus"
 
-set nList="6 3 0.1 10 100 1 0.5 0.2"
+set nList="6 3 0.1 10 100 1 0.5 0.2 200 1000"
 @ numb=40
 set c=0
 set m=1

@@ -1,6 +1,6 @@
 #!/bin/csh -f
 
-set bin="$HOME/teaching/environmental_geography/2019/pandemic_week/scripts/func_forms"
+set bin="$HOME/teaching/key_methods/key_src/scripts/data_scripts/func_forms"
 
 set outRoot="funcForm"
 

@@ -9,16 +9,17 @@ set term png
 #set term postscript enhanced monochrome "Times" 22
 #set size 0.75, 0.75
 #unset key
-set xlabel "Biomass (Mg/ha)"
-set ylabel "Predictor variable"
+set ylabel "Biomass (Mg/ha)"
+set xlabel "Predictor variable"
 unset key
 unset ytics
-set xrange[mIn:mAx]
+set yrange[mIn:mAx]
+set xrange[0:]
 
 set pointsize 2
 set output "filename.png"
 
-plot 'input'u 1:2
+plot 'input'u 2:1
 
 #!convert -rotate 90 noiseBias.eps noiseBias.gif
 
