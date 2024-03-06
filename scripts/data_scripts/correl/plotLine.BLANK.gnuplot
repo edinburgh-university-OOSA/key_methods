@@ -12,7 +12,7 @@ set term png
 set ylabel "Biomass (Mg/ha)"
 set xlabel "Predictor variable"
 unset key
-unset ytics
+unset xtics
 set yrange[mIn:mAx]
 set xrange[0:]
 
