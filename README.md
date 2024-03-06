@@ -34,3 +34,7 @@ Run
     Rscript /home/shancoc2/teaching/key_methods/2020-21/week10/code/data/scripts/preProcess2.R
     /home/shancoc2/teaching/key_methods/2020-21/week10/code/data/scripts/rename2.csh
 
+
+## data\_scripts
+
+This contains scripts to generate the graphs in the slides. It is taken from [environmental geography](https://github.com/edinburgh-university-OOSA/env_geog_2019).
